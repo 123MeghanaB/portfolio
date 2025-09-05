@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="max-w-4xl mx-auto px-6 text-center py-24">
         {/* Profile Image with Fade + Scale */}
         <motion.img
-          src="/me.jpeg"
+          src={`${process.env.PUBLIC_URL}/me.jpeg`}
           alt="Meghana B"
           className="w-40 h-40 rounded-full mx-auto mb-6 shadow-lg"
           initial={{ opacity: 0, scale: 0.8 }}
