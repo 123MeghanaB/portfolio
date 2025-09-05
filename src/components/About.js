@@ -14,7 +14,7 @@ export default function About() {
       <div className="max-w-3xl mx-auto px-6">
         {/* Profile Image on Top */}
         <img
-          src="/me.jpeg"
+          src={`${process.env.PUBLIC_URL}/me.jpeg`}
           alt="Meghana B"
           className="w-40 h-40 rounded-full mx-auto mb-6 shadow-lg"
         />
@@ -24,11 +24,11 @@ export default function About() {
           Enthusiastic and detail-oriented Computer Science Engineering
           student with strong problem-solving skills, proficient in Java,
           Python, OOP, and Data Structures. Passionate about building scalable
-          solutions, data visualization, HR analytics and web development.
+          solutions, data visualization, HR analytics, and web development.
         </p>
         <div className="mt-6">
           <a
-            href="/resume.pdf"
+            href={`${process.env.PUBLIC_URL}/resume.pdf`}
             className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition"
             target="_blank"
             rel="noopener noreferrer"
